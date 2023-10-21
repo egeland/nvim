@@ -1,5 +1,5 @@
 {
-  "copilot.vim": { "branch": "release", "commit": "59c02393c99335392e9cb572cb47951bbb4de6be" },
+  "copilot.lua": { "branch": "master", "commit": "1a8032ae496916ccc7a7a52ee79194fbef29f462" },
   "coq.artifacts": { "branch": "artifacts", "commit": "469c27eb84a91fe2721b6c0af57703ffa1e785e9" },
   "coq.thirdparty": { "branch": "3p", "commit": "47a748c18d6378df7aa033527d1b56d6dec94dc5" },
   "coq_nvim": { "branch": "coq", "commit": "d4a58fa7ab20c928f88e416b3fcf6ada965bf314" },
@@ -9,7 +9,7 @@
   "neoconf.nvim": { "branch": "main", "commit": "0e6b0a9fd9030ec6f13bf98c4b0ed87230e42928" },
   "neodev.nvim": { "branch": "main", "commit": "b094a663ccb71733543d8254b988e6bebdbdaca4" },
   "nightfox.nvim": { "branch": "main", "commit": "6a6076bd678f825ffbe16ec97807793c3167f1a7" },
-  "nvim-treesitter": { "branch": "master", "commit": "1bfefd1f98dae54576a54b59b42379b275a00414" },
-  "nvim-web-devicons": { "branch": "master", "commit": "3af745113ea537f58c4b1573b64a429fefad9e07" },
+  "nvim-treesitter": { "branch": "master", "commit": "6e4a7707995f80d4e24641a081e90fe61cd38060" },
+  "nvim-web-devicons": { "branch": "master", "commit": "f0267921c845c42685968401bc49aa65e18d3e09" },
   "which-key.nvim": { "branch": "main", "commit": "4433e5ec9a507e5097571ed55c02ea9658fb268a" }
 }

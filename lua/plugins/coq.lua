@@ -5,7 +5,6 @@ return {
   dependencies = {
     "ms-jpq/coq.artifacts",
     "ms-jpq/coq.thirdparty",
-    "github/copilot.vim",
   },
   config = function()
     require('coq_3p') {
