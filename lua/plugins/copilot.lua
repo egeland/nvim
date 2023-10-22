@@ -4,5 +4,6 @@ return {
   event = "InsertEnter",
   config = function()
     require("copilot").setup()
+    vim.cmd(":Copilot suggestion")
   end,
 }
