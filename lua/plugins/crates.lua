@@ -1,16 +1,16 @@
 return {
     'saecki/crates.nvim',
-    tag = 'v0.4.0',
-    dependencies = { 'nvim-lua/plenary.nvim' },
-    ft = "toml",
+    branch = 'main',
+    dependencies = { 'nvim-lua/plenary.nvim', 'hrsh7th/nvim-cmp' },
+    event = { "BufRead Cargo.toml" },
     config = function()
-      require('crates').setup {
+      require('crates').setup({
         src = {
-          coq = {
+          cmp = {
             enabled = true,
-            name = "crates.nvim",
           },
         },
-      }
+      })
+    require("crates.src.cmp").setup()
     end
 }
