@@ -5,6 +5,7 @@ return {
     'williamboman/mason.nvim',
     'williamboman/mason-lspconfig.nvim',
     'simrat39/rust-tools.nvim',
+    'rust-lang/rust.vim',
   },
   lazy = false,
   config = function()
@@ -33,12 +34,6 @@ return {
                   },
                 },
               },
-              on_attach = function(_, bufnr)
-                -- Hover actions
-                vim.keymap.set("n", "<Leader>rh", rt.hover_actions.hover_actions, { buffer = bufnr })
-                -- Code action groups
-                vim.keymap.set("n", "<Leader>a", rt.code_action_group.code_action_group, { buffer = bufnr })
-              end,
             },
           })
         end,
@@ -59,5 +54,17 @@ return {
         },
       }
     })
+    require("which-key").register({
+      r = {
+        name = "Rust",
+        a = { "<cmd>RustCodeAction<cr>", "Code Action" },
+        d = { "<cmd>RustMoveItemDown<cr>", "Move Item Down" },
+        f = { "<cmd>RustFmt<cr>", "Format" },
+        h = { "<cmd>RustHoverActions<cr>", "Hover Actions" },
+        j = { "<cmd>RustJoinLines<cr>", "Join Lines" },
+        r = { "<cmd>RustRunnables<cr>", "Runnables" },
+        u = { "<cmd>RustMoveItemUp<cr>", "Move Item Up" },
+      },
+    }, { prefix = "<leader>" })
   end
 }
