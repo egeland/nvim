@@ -6,6 +6,7 @@ return {
     'williamboman/mason-lspconfig.nvim',
     'simrat39/rust-tools.nvim',
     'rust-lang/rust.vim',
+    'pest-parser/pest.vim',
   },
   lazy = false,
   config = function()
@@ -17,6 +18,7 @@ return {
         pylsp = {},
         bashls = {},
         dockerls = {},
+        pest_ls = {},
         rust_analyzer = function()
           local rt = require('rust-tools')
           rt.setup({
